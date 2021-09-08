@@ -1,1 +1,13 @@
-this is to test pipeline
+#testing pipeline
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Testing') {
+            steps {
+                echo 'Testing pipeline SCM'
+            }
+        }
+    }
+}
